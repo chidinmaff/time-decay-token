@@ -1,0 +1,29 @@
+[project]
+name = 'time-decay'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.time-decay-factory]
+path = 'contracts/time-decay-factory.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.time-decay-token]
+path = 'contracts/time-decay-token.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.trait-file]
+path = 'contracts/trait-file.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
